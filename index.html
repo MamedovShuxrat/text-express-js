@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="tooltip">
+          <button class="btn">Это не кнопка</button>
+          <button class="shadow">Click</button>
+          <span class="hint">кнопка где-то рядом</span>
+        </div>
+        <div class="test">
+          <img src="logo-2.svg" alt="" class="logo" />
+        </div>
+      </header>
+      <div class="main">
+        <div class="left">
+          <div class="close">
+            <span class="line"></span>
+          </div>
+          <div class="container-move">
+            <img src="logo-1.svg" alt="" class="move move-1" />
+            <img src="logo-1.svg" alt="" class="move move-2" />
+            <img src="logo-1.svg" alt="" class="move move-3" />
+            <img src="logo-1.svg" alt="" class="move move-4" />
+
+            <button class="start-btn">Run</button>
+          </div>
+        </div>
+        <div class="right">
+          <h1 class="title">My home page</h1>
+
+          <div class="acc-box">
+            <div class="acc-items">for</div>
+            <div class="acc-title">
+              <p class="acc-content">
+                for (let index = 0; index < array.length; index++)
+              </p>
+            </div>
+
+            <div class="acc-items">forEach</div>
+            <div class="acc-title">
+              <p class="acc-content">array.forEach(element => {})</p>
+            </div>
+
+            <div class="acc-items">for in</div>
+            <div class="acc-title">
+              <p class="acc-content">
+                for (const key in object) {if
+                (Object.hasOwnProperty.call(object, key))
+              </p>
+            </div>
+
+            <div class="acc-items">for of</div>
+            <div class="acc-title">
+              <p class="acc-content">
+                for (const key in object) {if
+                (Object.hasOwnProperty.call(object, key))
+              </p>
+            </div>
+          </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

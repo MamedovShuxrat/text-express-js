@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("fonts/kaushan-script-v13-latin-regular.woff") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/kaushan-script-v13-latin-regular.woff2") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("fonts/montserrat-v23-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/montserrat-v23-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", "Montserrat";
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #503238;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.hint {
+  position: absolute;
+  top: -7px;
+  left: 130px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+.hint.active {
+  opacity: 1;
+}
+
+.btn {
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: black;
+  border: none;
+  margin-left: 100px;
+  cursor: pointer;
+  height: 20px;
+  background-color: #503238;
+  transition: color 1s ease-in;
+}
+
+.shadow {
+  color: #503238;
+  padding: 0 8px;
+  font-family: "Kaushan Script";
+  font-size: 18px;
+  border: none;
+  margin-left: 100px;
+  cursor: pointer;
+  height: 20px;
+  background-color: #503238;
+  transition: color 1s ease-in;
+}
+
+.shadow:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #503238;
+  cursor: default;
+}
+
+.test {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: -52px;
+  right: 0;
+  transform: rotate(180deg);
+  width: 50px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.left {
+  padding: 20px 10px 0;
+  width: 50%;
+  display: none;
+  position: relative;
+}
+
+.left.active {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: transform 0.8s ease-in;
+  top: 20px;
+  right: 20px;
+}
+
+.close:hover {
+  transform: rotate(-227deg);
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #503238;
+  margin: auto 0;
+  display: block;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #503238;
+  transform: rotate(-90deg);
+}
+
+.container-move {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.move {
+  width: 50px;
+  display: block;
+  margin: 10px 0;
+}
+
+.move-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.move-2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.move-3 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+.move-4 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background-color: #503238;
+  font-size: 16px;
+  border: 1px solid #ddb6b6;
+  transform: translate(-50%, -100%);
+}
+
+.start-btn:hover {
+  background-color: #fff;
+  color: #503238;
+}
+
+.right {
+  padding: 20px 10px 0;
+  flex-grow: 1;
+}
+
+.title {
+  font-family: "Kaushan Script";
+  color: #b58803;
+  text-align: right;
+}
+
+.acc-items {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.acc-items:hover {
+  background-color: #ccc;
+}
+
+.acc-items.active {
+  background-color: #ccc;
+}
+
+.acc-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.acc-title {
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 10px 0;
+  display: none;
+}
+
+.acc-title.active {
+  display: block;
+}
+
+.swiper {
+  margin-top: 50px;
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide {
+  background-image: url("https://c.wallhere.com/photos/e2/1a/3840x2160_px_rocks_sky_water-1312229.jpg!d");
+  background-size: cover;
+}
