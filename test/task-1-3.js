@@ -18,3 +18,8 @@ for (let index = 0; index <= 10; index++) {
   array.push(getPromise());
 }
 console.log(array);
+
+try {
+  let number = 12;
+  console.log(12 / 0);
+} catch (error) {}
